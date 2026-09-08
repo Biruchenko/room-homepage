@@ -68,10 +68,12 @@ function toggleMenu() {
 		menuBtn.setAttribute('aria-expanded', true);
 		menuBtn.setAttribute('aria-label', 'Close navigation menu');
 		menuList.querySelector('.menu__link').focus();
+		menuOverlay.setAttribute('aria-hidden', 'false');
 	} else {
 		menuBtn.setAttribute('aria-expanded', false);
 		menuBtn.setAttribute('aria-label', 'Open navigation menu');
 		menuBtn.focus();
+		menuOverlay.setAttribute('aria-hidden', 'true');
 	}
 	document.body.classList.toggle('no-scroll', menuBtn.classList.contains('open'));
 	document.body.style.top = menuBtn.classList.contains('open') ? -menuScrollPosition + 'px' : '';
