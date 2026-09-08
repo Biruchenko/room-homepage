@@ -16,7 +16,7 @@ This is a landing page for furniture and home decor company that showcases what 
 
 ### Links
 
-<!-- Add link -->
+- https://biruchenko.github.io/room-homepage/
 
 ### Built with
 
