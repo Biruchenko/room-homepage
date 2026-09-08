@@ -1,0 +1,187 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0"> <!-- displays site properly based on user's device -->
+	<link rel="icon" type="image/png" sizes="32x32" href="./images/favicon-32x32.png">
+	<title>Frontend Mentor | Room homepage</title>
+	<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@12/swiper-bundle.min.css" />
+	<link rel="stylesheet" href="./assets/styles/iconfont.css" />
+	<link rel="stylesheet" href="./assets/styles/styles.css">
+	<script src="./assets/scripts/script.js" defer></script>
+</head>
+
+<body>
+	<a href="#main" class="skip-link sr-only">Skip to main content</a>
+	<div class="wrapper">
+		<header class="header">
+			<h1 class="sr-only">Room - furniture and home decor</h1>
+			<div class="header__container">
+				<div class="header__wrapper">
+					<button type="button" class="header__btn-menu" aria-label="Open navigation menu" aria-expanded="false" aria-controls="menu-body">
+						<span aria-hidden="true"></span>
+					</button>
+					<a href="#" class="header__logo" aria-label="Room">
+						<img src="./assets/images/logo.svg" alt="" aria-hidden="true">
+					</a>
+					<div class="header__menu menu">
+						<nav class="menu__body" id="menu-body" aria-label="Primary navigation">
+							<ul class="menu__list">
+								<li class="menu__item">
+									<a href="#" class="menu__link active" aria-current="page">Home</a>
+								</li>
+								<li class="menu__item">
+									<a href="#" class="menu__link">Shop</a>
+								</li>
+								<li class="menu__item">
+									<a href="#" class="menu__link">About</a>
+								</li>
+								<li class="menu__item">
+									<a href="#" class="menu__link">Contact</a>
+								</li>
+							</ul>
+						</nav>
+						<div class="menu__overlay" aria-hidden="true"></div>
+					</div>
+				</div>
+			</div>
+		</header>
+		<main id="main">
+			<section class="hero">
+				<div class="hero__slider slider-hero swiper">
+					<div class="slider-hero__wrapper swiper-wrapper">
+						<div class="slider-hero__slide swiper-slide">
+							<div class="slider-hero__image-wrapper">
+								<picture class="slider-hero__image object-fit">
+									<source srcset="./assets/images/desktop-image-hero-1.jpg" media="(min-width: 48rem)">
+									<img src="./assets/images/mobile-image-hero-1.jpg" alt="">
+								</picture>
+								<div class="slider-hero__controls slider-hero__controls--mobile">
+									<button type="button" class="slider-hero__control slider-hero__control--prev" aria-label="Previous slide">
+										<span class="slider-hero__control-icon icon-angle-left" aria-hidden="true"></span>
+									</button>
+									<button type="button" class="slider-hero__control slider-hero__control--next" aria-label="Next slide">
+										<span class="slider-hero__control-icon icon-angle-right" aria-hidden="true"></span>
+									</button>
+								</div>
+							</div>
+							<div class="slider-hero__content">
+								<h2 class="slider-hero__title title-lg">Discover innovative ways to decorate</h2>
+								<div class="slider-hero__text text">
+									<p>We provide unmatched quality, comfort, and style for property owners across the country. Our experts combine form and function in bringing your vision to life. Create a room in your own style with our collection and make your property a reflection of you and what you love.</p>
+								</div>
+								<a href="#" class="slider-hero__button button">
+									<span class="button__text">Shop Now</span>
+									<span class="button__icon icon-arrow" aria-hidden="true"></span>
+								</a>
+								<div class="slider-hero__controls slider-hero__controls--desktop">
+									<button type="button" class="slider-hero__control slider-hero__control--prev" aria-label="Previous slide">
+										<span class="slider-hero__control-icon icon-angle-left" aria-hidden="true"></span>
+									</button>
+									<button type="button" class="slider-hero__control slider-hero__control--next" aria-label="Next slide">
+										<span class="slider-hero__control-icon icon-angle-right" aria-hidden="true"></span>
+									</button>
+								</div>
+							</div>
+						</div>
+						<div class="slider-hero__slide swiper-slide">
+							<div class="slider-hero__image-wrapper">
+								<picture class="slider-hero__image object-fit">
+									<source srcset="./assets/images/desktop-image-hero-2.jpg" media="(min-width: 48rem)">
+									<img src="./assets/images/mobile-image-hero-2.jpg" alt="">
+								</picture>
+								<div class="slider-hero__controls slider-hero__controls--mobile">
+									<button type="button" class="slider-hero__control slider-hero__control--prev" aria-label="Previous slide">
+										<span class="slider-hero__control-icon icon-angle-left" aria-hidden="true"></span>
+									</button>
+									<button type="button" class="slider-hero__control slider-hero__control--next" aria-label="Next slide">
+										<span class="slider-hero__control-icon icon-angle-right" aria-hidden="true"></span>
+									</button>
+								</div>
+							</div>
+							<div class="slider-hero__content">
+								<h2 class="slider-hero__title title-lg">We are available all across the globe</h2>
+								<div class="slider-hero__text text">
+									<p>With stores all over the world, it's easy for you to find furniture for your home or place of business. Locally, we’re in most major cities throughout the country. Find the branch nearest you using our store locator. Any questions? Don't hesitate to contact us today.</p>
+								</div>
+								<a href="#" class="slider-hero__button button">
+									<span class="button__text">Shop Now</span>
+									<span class="button__icon icon-arrow" aria-hidden="true"></span>
+								</a>
+								<div class="slider-hero__controls slider-hero__controls--desktop">
+									<button type="button" class="slider-hero__control slider-hero__control--prev" aria-label="Previous slide">
+										<span class="slider-hero__control-icon icon-angle-left" aria-hidden="true"></span>
+									</button>
+									<button type="button" class="slider-hero__control slider-hero__control--next" aria-label="Next slide">
+										<span class="slider-hero__control-icon icon-angle-right" aria-hidden="true"></span>
+									</button>
+								</div>
+							</div>
+						</div>
+						<div class="slider-hero__slide swiper-slide">
+							<div class="slider-hero__image-wrapper">
+								<picture class="slider-hero__image object-fit">
+									<source srcset="./assets/images/desktop-image-hero-3.jpg" media="(min-width: 48rem)">
+									<img src="./assets/images/mobile-image-hero-3.jpg" alt="">
+								</picture>
+								<div class="slider-hero__controls slider-hero__controls--mobile">
+									<button type="button" class="slider-hero__control slider-hero__control--prev" aria-label="Previous slide">
+										<span class="slider-hero__control-icon icon-angle-left" aria-hidden="true"></span>
+									</button>
+									<button type="button" class="slider-hero__control slider-hero__control--next" aria-label="Next slide">
+										<span class="slider-hero__control-icon icon-angle-right" aria-hidden="true"></span>
+									</button>
+								</div>
+							</div>
+							<div class="slider-hero__content">
+								<h2 class="slider-hero__title title-lg">Manufactured with the best materials</h2>
+								<div class="slider-hero__text text">
+									<p>Our modern furniture store provide a high level of quality. Our company has invested in advanced technology to ensure that every product is made as perfect and as consistent as possible. With three decades of experience in this industry, we understand what customers want for their home and office.</p>
+								</div>
+								<a href="#" class="slider-hero__button button">
+									<span class="button__text">Shop Now</span>
+									<span class="button__icon icon-arrow" aria-hidden="true"></span>
+								</a>
+								<div class="slider-hero__controls slider-hero__controls--desktop">
+									<button type="button" class="slider-hero__control slider-hero__control--prev" aria-label="Previous slide">
+										<span class="slider-hero__control-icon icon-angle-left" aria-hidden="true"></span>
+									</button>
+									<button type="button" class="slider-hero__control slider-hero__control--next" aria-label="Next slide">
+										<span class="slider-hero__control-icon icon-angle-right" aria-hidden="true"></span>
+									</button>
+								</div>
+							</div>
+						</div>
+					</div>
+					<!-- <div class="slider-hero__controls">
+						<button type="button" class="slider-hero__control" aria-label="Previous slide">
+							<span class="slider-hero__control-icon icon-angle-left" aria-hidden="true"></span>
+						</button>
+						<button type="button" class="slider-hero__control" aria-label="Next slide">
+							<span class="slider-hero__control-icon icon-angle-right" aria-hidden="true"></span>
+						</button>
+					</div> -->
+				</div>
+			</section>
+			<section class="about">
+				<figure class="about__image object-fit">
+					<img src="./assets/images/image-about-dark.jpg" alt="">
+				</figure>
+				<div class="about__content">
+					<h2 class="about__title title-sm">ABOUT OUR FURNITURE</h2>
+					<div class="about__text text">
+						<p>Our multifunctional collection blends design and function to suit your individual taste. Make each room unique, or pick a cohesive theme that best express your interests and what inspires you. Find the furniture pieces you need, from traditional to contemporary styles or anything in between. Product specialists are available to help you create your dream space.</p>
+					</div>
+				</div>
+				<figure class="about__image object-fit">
+					<img src="./assets/images/image-about-light.jpg" alt="">
+				</figure>
+			</section>
+		</main>
+		<footer class="attribution"> Challenge by <a href="https://www.frontendmentor.io?ref=challenge">Frontend Mentor</a>. Coded by <a href="#">Your Name Here</a>. </footer>
+	</div>
+	<script src="https://cdn.jsdelivr.net/npm/swiper@12/swiper-bundle.min.js"></script>
+</body>
+
+</html>

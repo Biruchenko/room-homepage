@@ -1,0 +1,97 @@
+/* === Sr-only && Skip-link && No-scroll === */
+.sr-only {
+  position: absolute;
+  width: 0.0625rem;
+  height: 0.0625rem;
+  padding: 0;
+  margin: -0.0625rem;
+  overflow: hidden;
+  clip: rect(0, 0, 0, 0);
+  white-space: nowrap;
+  border: 0;
+}
+
+.skip-link:focus {
+  position: absolute;
+  width: auto;
+  height: auto;
+  padding: 1rem;
+  margin: 0;
+  clip: auto;
+  white-space: normal;
+  background: var(--color-white);
+  color: var(--color-black);
+  z-index: 100;
+  top: 0;
+  left: 0;
+}
+
+.no-scroll {
+  position: fixed;
+  inset: 0;
+  padding-right: 0;
+  overflow: hidden;
+  width: 100%;
+}
+
+/* === Titles === */
+.title-lg {
+  font-weight: 600;
+  font-size: clamp(2.5rem, 2.023rem + 2.036vw, 3rem); /* min: 40px, max: 48px */
+  line-height: 0.9;
+  letter-spacing: -0.125rem;
+}
+@media (max-width: 47.9988rem) {
+  .title-lg {
+    line-height: 1;
+  }
+}
+
+.title-sm {
+  font-weight: 700;
+  font-size: clamp(0.875rem, 0.756rem + 0.509vw, 1rem); /* min: 14px, max: 16px */
+  letter-spacing: clamp(0.364rem, 0.295rem + 0.298vw, 0.438rem); /* min: 5.83px, max: 7px */
+  text-transform: uppercase;
+}
+@media (max-width: 47.9988rem) {
+  .title-sm {
+    line-height: 1.57142857; /* 22/14 */
+  }
+}
+
+/* === Text === */
+.text p:not(:last-child) {
+  margin-bottom: 10px;
+}
+
+/* === Button === */
+.button {
+  font-size: 0.9375rem;
+  line-height: 1;
+  letter-spacing: 0.7813rem;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  gap: 2rem;
+  color: var(--color-black);
+  text-transform: uppercase;
+  -webkit-transition: color 0.4s;
+  transition: color 0.4s;
+}
+.button:is(:hover, :focus-visible) {
+  color: var(--color-grey-500);
+}
+/* === Image === */
+.object-fit {
+  overflow: hidden;
+}
+.object-fit img {
+  display: block;
+  width: 100%;
+  height: 100%;
+  -o-object-fit: cover;
+     object-fit: cover;
+}
