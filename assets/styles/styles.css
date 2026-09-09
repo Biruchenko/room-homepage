@@ -274,7 +274,7 @@ body {
   position: absolute;
   bottom: 0;
 }
-@media (min-width: 47.9988rem) {
+@media (min-width: 48rem) {
   .slider-hero__controls--desktop {
     display: -webkit-box;
     display: -ms-flexbox;
@@ -282,7 +282,7 @@ body {
     left: 0;
   }
 }
-@media (max-width: 48rem) {
+@media (max-width: 47.9988rem) {
   .slider-hero__controls--desktop {
     display: none;
   }
